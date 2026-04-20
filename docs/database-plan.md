@@ -10,6 +10,7 @@ password (String): Contraseña encriptada para la autenticación (Obligatorio).
 role (String): Nivel de acceso en el sistema. Valores permitidos: buyer (comprador) o seller (vendedor). Por defecto: buyer.
 
 timestamps: Sí (genera automáticamente createdAt y updatedAt).
+
 --------------------------------------------------------------------------------------------------------------------------------------
 2. Product (Producto)
 Representa los artículos que conforman el catálogo de la tienda.
@@ -29,6 +30,7 @@ category (String): Clasificación del producto. Valores permitidos: men, women, 
 stock (Number): Cantidad de unidades disponibles en inventario (Obligatorio). Por defecto: 0.
 
 timestamps: Sí.
+
 ------------------------------------------------------------------------------------------------------------------------------------
 3. Cart (Carrito de Compras)
 Maneja el estado temporal de los productos que un usuario desea comprar antes de procesar el pago.
@@ -40,6 +42,7 @@ items (Array de Objetos): Lista de los productos agregados. Cada objeto contiene
 productId (ObjectId): Referencia directa al modelo Product (Obligatorio).
 
 quantity (Number): Cantidad que se desea llevar de ese producto en específico (Obligatorio). Por defecto: 1.
+
 ------------------------------------------------------------------------------------------------------------------------------------------
 4. Order (Órdenes / Pedidos)
 Registra el historial y el estado de las compras realizadas por los usuarios.

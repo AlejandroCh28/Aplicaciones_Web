@@ -9,6 +9,7 @@ Enrutamiento: Navegación manejada mediante React Router DOM.
 
 Peticiones HTTP: Se utiliza Axios (configurado en src/services/api.js) para consumir la API REST del backend, apuntando a la ruta base http://localhost:5000/api.
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 2. Backend (Servidor)
 Es la capa encargada de la lógica del negocio, validaciones y de exponer la API REST.
 
@@ -28,6 +29,7 @@ Estructura de la API: El servidor (corriendo en el puerto 5000) expone diferente
 
 Manejo de Archivos: Utiliza Multer para recibir imágenes, las cuales se almacenan localmente y se sirven de forma estática a través de la carpeta /uploads.
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 3. Base de Datos
 Encargada de la persistencia de los datos del sistema.
 
@@ -35,6 +37,7 @@ Motor de Base de Datos: MongoDB (Base de datos NoSQL).
 
 ODM (Object Data Modeling): Se utiliza Mongoose (configurado en src/config/db.js) para definir los esquemas, modelos (User, Product, Cart, Order) y facilitar las consultas a la base de datos de forma estructurada.
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 4. Seguridad y Autenticación
 Sesiones: Se utiliza JSON Web Tokens (JWT) para generar tokens de acceso, proteger rutas privadas y validar qué peticiones están autorizadas.
 
@@ -42,6 +45,7 @@ Encriptación: Las contraseñas de los usuarios se encriptan antes de guardarse 
 
 CORS: El backend implementa el middleware cors para permitir que el frontend se comunique con el servidor de forma segura sin bloqueos de navegador.
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 5. Flujo General de Comunicación
 El usuario interactúa con la interfaz en React.
 

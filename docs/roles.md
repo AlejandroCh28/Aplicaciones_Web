@@ -10,7 +10,7 @@ Modificar cantidades o eliminar productos de su carrito.
 Procesar el pago y finalizar compras (Checkout).
 
 Visualizar el historial y estado de sus propias órdenes.
-
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 2. Seller (Vendedor)
 Es un usuario con privilegios elevados, encargado de la gestión de la tienda y el inventario. Además de poder realizar las mismas acciones que un comprador, cuenta con los siguientes permisos de administración:
 
@@ -21,7 +21,7 @@ Actualizar la información de productos existentes (modificar precios, stock, ca
 Eliminar productos del sistema.
 
 Subir imágenes al servidor para asociarlas a los artículos.
-
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 3. Implementación de la Seguridad (Cómo funciona)
 Para garantizar que los permisos se respeten, el sistema valida los roles en dos capas (Frontend y Backend):
 

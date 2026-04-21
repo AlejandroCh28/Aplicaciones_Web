@@ -86,7 +86,7 @@ Essenza_Luxe/
 
 ---
 
->  IMPORTANTE: EN backend/src crear carpet uploads (aqui se almacenaran las imagenes que se usan en los productos , en el zip fuera del programa se adjuntara una carpeta con las imagenes que se suben desde la pagina en seller, y se suben en cada producto)
+>  IMPORTANTE: En backend/src crear carpeta uploads (aqui se almacenaran las imagenes que se usan en los productos , en el zip fuera del programa se adjuntara una carpeta con las imagenes que se suben desde la pagina en seller, y se suben en cada producto)
 ---
 
 ##  Instrucciones para ejecutar el proyecto

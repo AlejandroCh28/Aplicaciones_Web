@@ -103,6 +103,7 @@ Abrir terminal en la carpeta: backend
 Instalar dependencias:
 
 cd backend
+
 npm install
 
 ---
@@ -129,6 +130,7 @@ Abrir otra terminal en: frontend
 Instalar dependencias:
 
 cd frontend
+
 npm install
 
 ---

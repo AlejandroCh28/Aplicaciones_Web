@@ -53,4 +53,3 @@ Ruta auxiliar para el manejo de imágenes (usando Multer).
 
 POST /api/upload → Recibe un archivo (mediante el campo de formulario image), valida que sea una imagen válida (.jpg, .png, .webp) y lo guarda en el servidor. Devuelve la URL pública para acceder a la imagen (Protegido - Solo seller).
 
--------------------------------------------------------------------------------------------------------------------------------------------------------

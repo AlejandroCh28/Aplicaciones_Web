@@ -1,4 +1,5 @@
 1. Buyer (Comprador)
+
 Es el rol asignado por defecto a cualquier usuario nuevo al momento de registrarse. Sus permisos están enfocados en la experiencia de compra:
 
 Ver el catálogo de productos disponibles.
@@ -13,6 +14,7 @@ Visualizar el historial y estado de sus propias órdenes.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 2. Seller (Vendedor)
+
 Es un usuario con privilegios elevados, encargado de la gestión de la tienda y el inventario. Además de poder realizar las mismas acciones que un comprador, cuenta con los siguientes permisos de administración:
 
 Crear y publicar nuevos productos en el catálogo.
@@ -25,6 +27,7 @@ Subir imágenes al servidor para asociarlas a los artículos.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 3. Implementación de la Seguridad (Cómo funciona)
+
 Para garantizar que los permisos se respeten, el sistema valida los roles en dos capas (Frontend y Backend):
 
 Protección en el Frontend (React): A través de AuthContext, la aplicación guarda la sesión del usuario (incluyendo su rol) en el estado global y en el localStorage. Esto permite que la interfaz de usuario sea dinámica; por ejemplo, ocultando el botón de "Crear Producto" a los compradores y bloqueando el acceso a pantallas de administración mediante componentes como PrivateRoute.

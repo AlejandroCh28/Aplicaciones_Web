@@ -3,6 +3,7 @@ import { useNavigate, Link } from "react-router-dom";
 import api from "../../services/api";
 import { useAuth } from "../../context/AuthContext";
 import AuthLayout from "../../layouts/AuthLayout";
+import logo from "../../assets/logo.png";
 
 const Login = () => {
   const [form, setForm] = useState({
@@ -109,7 +110,7 @@ const Login = () => {
           </p>
         </div>
 
-        <div className="rounded-[28px] overflow-hidden bg-[#e9e7e2] min-h-[320px] flex flex-col justify-between">
+        <div className="rounded-[28px] overflow-hidden bg-[#d6d0c5] min-h-[320px] flex flex-col justify-between">
           <div className="p-8 md:p-10">
             <p className="text-sm uppercase tracking-[0.25em] text-black/40 mb-4">
               Essenza Luxe
@@ -119,7 +120,13 @@ const Login = () => {
             </h3>
           </div>
 
-          <div className="h-52 bg-gradient-to-br from-[#d8d2c8] via-[#f3efe8] to-[#b8aa95]" />
+          <div className="flex-1 flex items-center justify-center p-8 md:p-10">
+            <img
+              src={logo}
+              alt="Essenza Luxe"
+              className="max-w-[75%] h-auto object-contain opacity-95"
+            />
+          </div>
         </div>
       </div>
     </AuthLayout>

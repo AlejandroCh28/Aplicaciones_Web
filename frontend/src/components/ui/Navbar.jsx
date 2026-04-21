@@ -1,5 +1,6 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
+import logo from "../../assets/logo.png";
 
 const Navbar = () => {
   const { user, logout } = useAuth();
@@ -15,13 +16,26 @@ const Navbar = () => {
   return (
     <header className="border-b border-black/10 bg-white">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        <div>
-          <h1 className="text-2xl font-semibold">Essenza Luxe</h1>
-          <p className="text-sm text-black/50">
-            Bienvenido, {user?.name}
-          </p>
+
+        {/* 🔥 LOGO + TEXTO */}
+        <div className="flex items-center gap-3">
+          <img
+            src={logo}
+            alt="Essenza Luxe"
+            className="h-12 w-12 object-contain"
+          />
+
+          <div>
+            <h1 className="text-xl font-semibold leading-none">
+              Essenza Luxe
+            </h1>
+            <p className="text-sm text-black/50">
+              Bienvenido, {user?.name}
+            </p>
+          </div>
         </div>
 
+        {/* 🔥 NAV */}
         <nav className="flex items-center gap-3 flex-wrap justify-end">
           {user.role === "buyer" && (
             <>
@@ -59,7 +73,7 @@ const Navbar = () => {
 
           <button
             onClick={handleLogout}
-            className="rounded-xl bg-black text-white px-4 py-2"
+            className="rounded-xl bg-black text-white px-4 py-2 hover:opacity-80 transition"
           >
             Cerrar sesión
           </button>

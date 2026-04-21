@@ -1,4 +1,5 @@
 1. User (Usuario)
+
 Almacena la información de las personas registradas en la plataforma, controlando sus accesos mediante roles.
 
 name (String) → Nombre del usuario (Obligatorio).
@@ -13,6 +14,7 @@ timestamps → Sí (genera automáticamente createdAt y updatedAt).
 
 --------------------------------------------------------------------------------------------------------------------------------------
 2. Product (Producto)
+
 Representa los artículos que conforman el catálogo de la tienda.
 
 name (String) → Nombre del producto (Obligatorio).
@@ -33,6 +35,7 @@ timestamps → Sí.
 
 ------------------------------------------------------------------------------------------------------------------------------------
 3. Cart (Carrito de Compras)
+
 Maneja el estado temporal de los productos que un usuario desea comprar antes de procesar el pago.
 
 user (ObjectId) → Referencia directa al modelo User. Indica de quién es el carrito (Obligatorio).
@@ -45,6 +48,7 @@ quantity (Number) → Cantidad que se desea llevar de ese producto en específic
 
 ------------------------------------------------------------------------------------------------------------------------------------------
 4. Order (Órdenes / Pedidos)
+
 Registra el historial y el estado de las compras realizadas por los usuarios.
 
 user (ObjectId) → Referencia directa al modelo User que realizó la compra (Obligatorio).

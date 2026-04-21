@@ -21,7 +21,7 @@ const AuthLayout = ({ title, subtitle, children }) => {
       <section className="bg-black text-white">
         <div className="max-w-7xl mx-auto px-6 py-16 md:py-24">
           <p className="uppercase tracking-[0.3em] text-xs text-white/60 mb-4">
-            Parfumerie
+            Essenza Luxe Tu tienda de perfumes de lujo en línea
           </p>
           <h1 className="text-4xl md:text-6xl font-semibold leading-[0.95] max-w-3xl">
             {title}

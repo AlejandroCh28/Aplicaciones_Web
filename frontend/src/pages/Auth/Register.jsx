@@ -3,6 +3,7 @@ import { useNavigate, Link } from "react-router-dom";
 import api from "../../services/api";
 import { useAuth } from "../../context/AuthContext";
 import AuthLayout from "../../layouts/AuthLayout";
+import logo from "../../assets/logo.png";
 
 const Register = () => {
   const [form, setForm] = useState({
@@ -134,17 +135,23 @@ const Register = () => {
           </p>
         </div>
 
-        <div className="rounded-[28px] overflow-hidden bg-[#e9e7e2] min-h-[320px] flex flex-col justify-between">
+        <div className="rounded-[28px] overflow-hidden bg-[#d6d0c5] min-h-[320px] flex flex-col justify-between">
           <div className="p-8 md:p-10">
             <p className="text-sm uppercase tracking-[0.25em] text-black/40 mb-4">
-              Parfumerie
+              Essenza Luxe
             </p>
             <h3 className="text-2xl md:text-3xl font-semibold leading-tight max-w-sm">
               Diseño limpio, identidad premium y acceso organizado por rol.
             </h3>
           </div>
 
-          <div className="h-52 bg-gradient-to-br from-[#111111] via-[#2e2e2e] to-[#c7b8a1]" />
+          <div className="flex-1 flex items-center justify-center p-8 md:p-10">
+            <img
+              src={logo}
+              alt="Essenza Luxe"
+              className="max-w-[75%] h-auto object-contain opacity-95"
+            />
+          </div>
         </div>
       </div>
     </AuthLayout>

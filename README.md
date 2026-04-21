@@ -69,7 +69,7 @@ Essenza_Luxe/
 │ │ ├── middleware/
 │ │ ├── models/
 │ │ ├── routes/
-│ │ └── server.js
+│ │ └── uploads.js
 │ └── package.json
 │
 ├── frontend/
@@ -84,7 +84,9 @@ Essenza_Luxe/
 │
 └── docs/
 
+---
 
+>  IMPORTANTE: EN backend/src crear carpet uploads (aqui se almacenaran las imagenes que se usan en los productos , en el zip fuera del programa se adjuntara una carpeta con las imagenes que se suben desde la pagina en seller, y se suben en cada producto)
 ---
 
 ##  Instrucciones para ejecutar el proyecto
@@ -97,43 +99,57 @@ Essenza_Luxe/
 
 Abrir terminal en la carpeta: backend
 
-
+---
 Instalar dependencias:
 
 cd backend
 npm install
 
+---
 Crear archivo .env dentro de backend con:
 
 PORT=5000
 MONGO_URI=tu_conexion_mongodb
 JWT_SECRET=essenza_luxe
 
-Ejecutar:
-
-npm run dev
-
-###  Frontend
-
-Abrir otra terminal en: frontend
-
-Instalar dependencias:
-
-cd frontend
-npm install
+---
 
 Ejecutar:
 
 npm run dev
 
 ---
+
+###  Frontend
+
+Abrir otra terminal en: frontend
+
+---
+
+Instalar dependencias:
+
+cd frontend
+npm install
+
+---
+
+Ejecutar:
+
+npm run dev
+
+---
+
 ## Acceso al sistema
 
 Una vez ejecutado:
 
+---
+
  Frontend:
 
 http://localhost:5173
+
+---
 
 👉 Backend:
 

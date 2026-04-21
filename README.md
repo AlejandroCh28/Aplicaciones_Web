@@ -60,3 +60,82 @@ Resolver la desorganización en la gestión de productos y compras mediante una 
 
 ##  Estructura del proyecto
 
+Essenza_Luxe/
+│
+├── backend/
+│ ├── src/
+│ │ ├── config/
+│ │ ├── controllers/
+│ │ ├── middleware/
+│ │ ├── models/
+│ │ ├── routes/
+│ │ └── server.js
+│ └── package.json
+│
+├── frontend/
+│ ├── src/
+│ │ ├── components/
+│ │ ├── context/
+│ │ ├── layouts/
+│ │ ├── pages/
+│ │ ├── services/
+│ │ └── assets/
+│ └── package.json
+│
+└── docs/
+
+
+---
+
+##  Instrucciones para ejecutar el proyecto
+
+>  IMPORTANTE: Se deben ejecutar **frontend y backend por separado**
+
+---
+
+###  Backend
+
+Abrir terminal en la carpeta: backend
+
+
+Instalar dependencias:
+
+cd backend
+npm install
+
+Crear archivo .env dentro de backend con:
+
+PORT=5000
+MONGO_URI=tu_conexion_mongodb
+JWT_SECRET=essenza_luxe
+
+Ejecutar:
+
+npm run dev
+
+###  Frontend
+
+Abrir otra terminal en: frontend
+
+Instalar dependencias:
+
+cd frontend
+npm install
+
+Ejecutar:
+
+npm run dev
+
+---
+## Acceso al sistema
+
+Una vez ejecutado:
+
+ Frontend:
+
+http://localhost:5173
+
+👉 Backend:
+
+http://localhost:5000
+
